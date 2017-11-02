@@ -14,7 +14,7 @@
  */
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class DefaultChildThemePlugin extends ThemePlugin {
+class LuSiteThemePlugin extends ThemePlugin {
 	/**
 	 * Initialize the theme's styles, scripts and hooks. This is only run for
 	 * the currently active theme.
