@@ -12,25 +12,10 @@
   -->
 
 <version>
-	<!-- The application should match the theme folder to ensure it is unique -->
 	<application>lu_site_theme</application>
-
-	<!-- The type should always be `plugins.themes` -->
 	<type>plugins.themes</type>
-
-	<!--
-		The current version. It should always include 4 numbers.
-	    Valid: 1.0.2.3, 0.1.4.0
-		Invalid: 1.0, v1.0.4, 1.0.0.0b
-	-->
-	<release>1.0.0.0</release>
-
-	<!-- The date of the latest version -->
-	<date>2017-10-26</date>
-
-	<!-- This should always be 0 -->
+	<release>0.9.0.0</release>
+	<date>2017-11-02</date>
 	<lazy-load>0</lazy-load>
-
-	<!-- The class name of the plugin. See index.php -->
 	<class>LuSiteThemePlugin</class>
 </version>
