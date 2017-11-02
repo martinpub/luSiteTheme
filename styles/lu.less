@@ -1,3 +1,71 @@
+@lu-pink: #fbe5f0;
+@lu-green: #dfefe8;
+@lu-gold: #8e5614;
+@lu-beige: #ebe5d8;
+@lu-gray: #dedbd9;
+
 .pkp_structure_head {
-  background-color: pink;
+  background-color: white;
+  color: black;
   }
+
+.pkp_structure_footer_wrapper {
+  background-color: @lu-green;
+  color: black;
+  }
+
+.pkp_footer_content {
+  width: 40%;
+  margin: auto;
+  }
+
+
+.lu_brand_footer {
+    padding: 30px;
+}
+.lu_brand_footer::before, .lu_brand_footer::after {
+    content: " ";
+    display: table;
+}
+.lu_brand_footer::after {
+    clear: none;
+}
+.lu_brand_footer a {
+    display: block;
+    float: right;
+    max-width: 250px;
+}
+
+a {
+  color: @lu-gold;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+  color: @lu-gold;
+}
+
+.pkp_navigation_primary .dropdown-menu a:focus, .pkp_navigation_primary .dropdown-menu a:hover {
+  border-color: @lu-gold;
+}
+
+.pkp_nav_list ul a:hover, .pkp_nav_list ul a:focus {
+    background: @lu-beige none repeat scroll 0 0;
+    border-color: @lu-gold;
+    outline: 0 none;
+}
+
+.pkp_site_name .is_text {
+  color: @lu-gold;
+  font-family: "Georgia", serif;
+  }
+
+h1, h2, h3, h4, .pkp_page_index .journals h3 {
+  font-family: "Georgia", serif;
+  }
+
+body {
+  font-family: "Arial", sans-serif;
+  }
+
+/*.pkp_navigation_user_wrapper {  background: @lu-pink;  } */
