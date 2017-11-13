@@ -19,21 +19,24 @@
   margin: auto;
   }
 
-
 .lu_brand_footer {
-    padding: 30px;
+  display: table-cell;
+  max-width: 150px;
+  padding: 10px;
 }
-.lu_brand_footer::before, .lu_brand_footer::after {
-    content: " ";
-    display: table;
+
+.pkp_brand_footer {
+  display: table-cell;
+  padding: 10px;
+  }
+
+.branding_footer {
+  display: table-row;
 }
-.lu_brand_footer::after {
-    clear: none;
-}
-.lu_brand_footer a {
-    display: block;
-    float: right;
-    max-width: 250px;
+
+.pkp_brand_footer:before,.pkp_brand_footer:after {
+	display: none;
+	clear: none;
 }
 
 a {
@@ -68,4 +71,4 @@ body {
   font-family: "Arial", sans-serif;
   }
 
-/*.pkp_navigation_user_wrapper {  background: @lu-pink;  } */
+.pkp_navigation_user_wrapper {  background: @lu-beige;  }

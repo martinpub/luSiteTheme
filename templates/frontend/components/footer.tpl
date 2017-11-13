@@ -34,18 +34,17 @@
 				{$pageFooter}
 			</div>
 		{/if}
-
-		<div class="lu_brand_footer" role="complementary">
-		     <a href="http://www.lu.se/">
-		     	<img alt="Lund University" src="{$baseUrl}/plugins/themes/lu_site_theme/images/lu_logo-landscape.png" />
-		     </a>
-		</div>
-
-
-		<div class="pkp_brand_footer" role="complementary">
+		<div class="branding_footer">
+		     <div class="lu_brand_footer" role="complementary">
+		     	  <a href="http://www.lu.se/">
+		     	     <img alt="Lund University" src="{$baseUrl}/plugins/themes/lu_site_theme/images/lu_logo-portrait.png" />
+		     	  </a>
+		     </div>	  
+		     <div class="pkp_brand_footer" role="complementary">
 			<a href="{url page="about" op="aboutThisPublishingSystem"}">
 				<img alt="{translate key="about.aboutThisPublishingSystem"}" src="{$baseUrl}/{$brandImage}">
 			</a>
+		     </div>
 		</div>
 
 	</div>
