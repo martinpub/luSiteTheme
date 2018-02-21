@@ -65,13 +65,6 @@
 		</div>
 	{/if}
 
-	{* Additional Homepage Content *}
-	{if $additionalHomeContent}
-		<div class="additional_content">
-			{$additionalHomeContent}
-		</div>
-	{/if}
-
 	{* Latest issue *}
 	{if $issue}
 		<div class="current_issue">
