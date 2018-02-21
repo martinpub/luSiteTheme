@@ -14,29 +14,28 @@
   color: black;
   }
 
-.pkp_footer_content {
-  width: 40%;
-  margin: auto;
-  }
-
 .lu_brand_footer {
-  display: table-cell;
-  max-width: 150px;
+  grid-column: 1;
   padding: 10px;
+  position: relative;
+
 }
 
 .pkp_brand_footer {
-  display: table-cell;
+  grid-column: 3;
   padding: 10px;
-  }
-
-.branding_footer {
-  display: table-row;
+  position: relative;
+ 
 }
 
-.pkp_brand_footer:before,.pkp_brand_footer:after {
-	display: none;
-	clear: none;
+.pkp_brand_footer img, lu_brand_footer img {
+    width: 130px;
+}
+
+
+.branding_footer {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
 }
 
 a {
@@ -71,4 +70,4 @@ body {
   font-family: "Arial", sans-serif;
   }
 
-.pkp_navigation_user_wrapper {  background: @lu-beige;  }
+/*.pkp_navigation_user_wrapper {  background: @lu-beige;  }*/
