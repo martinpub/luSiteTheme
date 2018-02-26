@@ -2,7 +2,7 @@
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
-  * plugins/themes/lu_site_theme/locale/en_US/locale.xml
+  * plugins/themes/lu_site_theme/locale/sv_SE/locale.xml
   *
   * Copyright (c) 2014-2018 Simon Fraser University
   * Copyright (c) 2003-2018 John Willinsky
@@ -11,7 +11,7 @@
   * Localization strings
   -->
 
-<locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.luSiteTheme.name">LU site theme</message>
-	<message key="plugins.themes.luSiteTheme.description">Lund University default OJS theme.</message>
+<locale name="sv_SE" full_name="Svenska">
+	<message key="plugins.themes.luSiteTheme.name">LU webbplatstema</message>
+	<message key="plugins.themes.luSiteTheme.description">Standardtema för Lunds universitet.</message>
 </locale>
