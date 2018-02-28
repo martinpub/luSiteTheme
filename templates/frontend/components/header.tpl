@@ -33,6 +33,7 @@
 
 		{* Header *}
 		<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+			<img class="lu_cropped_logo" alt="Lunds universitets sigill" src="{$baseUrl}/plugins/themes/lu_site_theme/images/lu_logo-cropped.png"/>
 			<div class="pkp_head_wrapper">
 
 				<div class="pkp_site_name_wrapper">
