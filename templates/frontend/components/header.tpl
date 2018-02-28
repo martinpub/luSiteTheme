@@ -33,7 +33,6 @@
 
 		{* Header *}
 		<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
-			<img class="lu_cropped_logo" alt="Lunds universitets sigill" src="{$baseUrl}/plugins/themes/lu_site_theme/images/lu_logo-cropped.png"/>
 			<div class="pkp_head_wrapper">
 
 				<div class="pkp_site_name_wrapper">
@@ -69,6 +68,17 @@
 					{else}
 						</div>
 					{/if}
+					<div class="lu_top_logo">
+					{if $currentLocale == 'sv_SE'}
+					<a href="https://www.lu.se/">
+					    <img alt="Lunds universitet" src="{$baseUrl}/plugins/themes/lu_site_theme/images/lu_logo-portrait-sv.png" />
+					</a>		    
+					{else}	 
+					<a href="https://www.lunduniversity.lu.se/">
+					   <img alt="Lund University" src="{$baseUrl}/plugins/themes/lu_site_theme/images/lu_logo-portrait-en.png" />
+					</a>
+					</div>
+			  		{/if}
 				</div>
 
 				{* Primary site navigation *}
@@ -84,7 +94,6 @@
 					</nav>
 				{/if}
 			</div><!-- .pkp_head_wrapper -->
-			
 			<nav class="pkp_navigation_user_wrapper" id="navigationUserWrapper" aria-label="{translate|escape key="common.navigation.user"}">
 			     {load_menu name="user" id="navigationUser" ulClass="pkp_navigation_user" liClass="profile"}
 			</nav>
@@ -93,6 +102,6 @@
 		{* Wrapper for page content and sidebars *}
 		{if $isFullWidth}
 			{assign var=hasSidebar value=0}
-		{/if}
-		<div class="pkp_structure_content{if $hasSidebar} has_sidebar{/if}">
+		{/if}	
+	<div class="pkp_structure_content{if $hasSidebar} has_sidebar{/if}">
 			<div id="pkp_content_main" class="pkp_structure_main" role="main">

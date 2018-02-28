@@ -1,11 +1,42 @@
+// Introducing LU-specific variables
+
 @lu-pink: #fbe5f0;
 @lu-green: #dfefe8;
 @lu-gold: #8e5614;
 @lu-beige: #ebe5d8;
 @lu-gray: #dedbd9;
 
+// Colour customisation
+
+@primary: @lu-gold;
+
+
+// Typography customisation
+@font: "Arial", sans-serif;
+@font-heading: "Georgia", serif;
+
+@media( min-width: @screen-tablet ) {
+
+	// REMOVE Full-height borders wrapping primary content column
+	.pkp_structure_main {
+
+		&:before,
+		&:after {
+			width: 0px;
+		}
+
+		&:after {
+			left: @screen-tablet-container;
+		}
+	}
+}
+
+
+
+// CSS below needs to be fixed to use parent or customised variables
+
 .pkp_structure_head {
-  background-color: white;
+  background-color: @lu-green;
   color: black;
   }
 
@@ -43,13 +74,8 @@
   grid-template-columns: 150px 150px;
 }
 
-a {
-  color: @lu-gold;
-}
-
 a:hover, a:focus {
   text-decoration: underline;
-  color: @lu-gold;
 }
 
 .pkp_navigation_primary .dropdown-menu a:focus, .pkp_navigation_primary .dropdown-menu a:hover {
@@ -64,23 +90,10 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
-.pkp_site_name .is_text {
-  color: @lu-gold;
-  font-family: "Georgia", serif;
-  text-transform: uppercase;
-  }
-
-h1, h2, h3, h4 {
-  font-family: "Georgia", serif;
-}
-
-.pkp_page_index .journals h3 {
-    font-size: 16px;
+.pkp_site_name .is_text a {
     font-family: "Georgia", serif;
-}
-
-body {
-  font-family: "Arial", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 
 .pkp_page_index .additional_content {
@@ -94,14 +107,18 @@ body {
     color: @lu-gold;
 }
 
-.pkp_page_index .journals > ul > li {
-    border-top: none;
-}
 
 .pkp_block .title {
     color: @lu-gold;
-    font-family: "Georgia", serif;
+    font-family: @font-heading;
 }
+
+.pkp_block {
+    background-color: @lu-beige;
+    margin-left: 30px;
+}
+
+
 
 .pkp_navigation_primary > li > a, .pkp_navigation_primary > li > a:hover, .pkp_navigation_primary > li > a:focus {
     color: @lu-gold;
@@ -130,11 +147,15 @@ body {
 }
 
 .cmp_breadcrumbs .current h1 {
-    font-family: "Arial", sans-serif;
+    font-family: @font;
 }
 
 .pkp_structure_main h3, .pkp_structure_main h2, .pkp_structure_main h4 {
-    font-family: "Georgia", serif;
+    font-family: @font-heading;
+}
+
+.pkp_page_index .journals h3 {
+    font-size: @font-bump;
 }
 
 .page_submissions .submission_checklist li::before {
@@ -161,19 +182,26 @@ body {
 	font-family: "Arial", sans-serif;
 }
 
-.lu_cropped_logo {
-    display: block;
-    float: left;
-    width: 150px;
+#navigationUserWrapper {
+
+    color: black;
 }
 
-.pkp_site_name .is_img {
+.pkp_structure_head {
+    border: none;
+
+}
+
+.lu_top_logo {
+    float: right;
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pkp_site_name {
+    float: left;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-}
-
-#navigationUserWrapper {
-    background: @lu-green;
-    color: black;
 }
