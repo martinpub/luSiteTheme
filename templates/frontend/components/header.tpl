@@ -83,10 +83,11 @@
 						</div>
 					</nav>
 				{/if}
-				<nav class="pkp_navigation_user_wrapper" id="navigationUserWrapper" aria-label="{translate|escape key="common.navigation.user"}">
-					{load_menu name="user" id="navigationUser" ulClass="pkp_navigation_user" liClass="profile"}
-				</nav>
 			</div><!-- .pkp_head_wrapper -->
+			
+			<nav class="pkp_navigation_user_wrapper" id="navigationUserWrapper" aria-label="{translate|escape key="common.navigation.user"}">
+			     {load_menu name="user" id="navigationUser" ulClass="pkp_navigation_user" liClass="profile"}
+			</nav>
 		</header><!-- .pkp_structure_head -->
 
 		{* Wrapper for page content and sidebars *}
