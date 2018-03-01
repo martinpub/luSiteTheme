@@ -15,24 +15,6 @@
 @font: "Arial", sans-serif;
 @font-heading: "Georgia", serif;
 
-@media( min-width: @screen-tablet ) {
-
-	// REMOVE Full-height borders wrapping primary content column
-	.pkp_structure_main {
-
-		&:before,
-		&:after {
-			width: 0px;
-		}
-
-		&:after {
-			left: @screen-tablet-container;
-		}
-	}
-}
-
-
-
 // CSS below needs to be fixed to use parent or customised variables
 
 .pkp_structure_head {
@@ -90,10 +72,11 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
-.pkp_site_name .is_text a {
+.pkp_site_name .is_text {
     font-family: "Georgia", serif;
     text-transform: uppercase;
     text-decoration: none;
+    color: @lu-gold;
   }
 
 .pkp_page_index .additional_content {
@@ -112,13 +95,6 @@ a:hover, a:focus {
     color: @lu-gold;
     font-family: @font-heading;
 }
-
-.pkp_block {
-    background-color: @lu-beige;
-    margin-left: 30px;
-}
-
-
 
 .pkp_navigation_primary > li > a, .pkp_navigation_primary > li > a:hover, .pkp_navigation_primary > li > a:focus {
     color: @lu-gold;
@@ -193,15 +169,20 @@ a:hover, a:focus {
 }
 
 .lu_top_logo {
+    position: absolute;
     float: right;
     width: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.pkp_site_name {
-    float: left;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
+//.pkp_site_name {
+//    float: left;
+//    position: absolute;
+//    top: 50%;
+//    transform: translateY(-50%);
+//}
+
+//.pkp_structure_main::before {
+//    width: 0px;
+//}
