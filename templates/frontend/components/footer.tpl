@@ -11,7 +11,7 @@
  *       represents a page-level override, and doesn't indicate whether or not
  *       sidebars have been configured for thesite.
  *}
-
+		
 	</div><!-- pkp_structure_main -->
 
 	{* Sidebars *}
@@ -19,6 +19,17 @@
 		{call_hook|assign:"sidebarCode" name="Templates::Common::Sidebar"}
 		{if $sidebarCode}
 			<div class="pkp_structure_sidebar left" role="complementary" aria-label="{translate|escape key="common.navigation.sidebar"}">
+			     <div class="lu_logo_sidebar pkp_block">
+		     	     	  {if $currentLocale == 'sv_SE'}
+		     	  	  <a href="https://www.lu.se/">
+		     	     	     <img alt="Lunds universitet" src="{$baseUrl}/plugins/themes/lu_site_theme/images/lu_logo-portrait-sv.png" />
+		     	  	  </a>
+			  	  {else}
+		     	  	  <a href="https://www.lunduniversity.lu.se/">
+		     	     	     <img alt="Lund University" src="{$baseUrl}/plugins/themes/lu_site_theme/images/lu_logo-portrait-en.png" />
+		     	  	  </a>
+			  	  {/if}
+			     </div>
 				{$sidebarCode}
 			</div><!-- pkp_sidebar.left -->
 		{/if}
