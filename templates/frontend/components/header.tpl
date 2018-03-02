@@ -65,20 +65,6 @@
 						{/if}
 					{if $requestedOp == 'index'}
 						</h1>
-						
-						<div class="lu_top_logo">
-						     {if $currentLocale == 'sv_SE'}
-						     	 <a href="https://www.lu.se/">
-					    		    <img alt="Lunds universitet" src="{$baseUrl}/plugins/themes/lu_site_theme/images/lu_logo-portrait-sv.png" />
-							 </a>		    
-						     {else}	 
-						         <a href="https://www.lunduniversity.lu.se/">
-					   		    <img alt="Lund University" src="{$baseUrl}/plugins/themes/lu_site_theme/images/lu_logo-portrait-en.png" />
-							 </a>
-			  			     {/if}
-						</div>
-
-
 					{else}
 						</div>
 					{/if}
