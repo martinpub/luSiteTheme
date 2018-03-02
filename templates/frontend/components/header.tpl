@@ -84,6 +84,16 @@
 				{/if}
 			</div><!-- .pkp_head_wrapper -->
 			<nav class="pkp_navigation_user_wrapper" id="navigationUserWrapper" aria-label="{translate|escape key="common.navigation.user"}">
+			     {if $requestedOp !== 'index'}
+	  		     	  {if $currentLocale == 'sv_SE'}
+			     	      <a class="lu_ojs_link" href="https://journals.lub.lu.se/">Open Journal Systems vid Lunds universitet</a>
+				  {else}
+      			     	      <a class="lu_ojs_link" href="https://journals.lub.lu.se/">Open Journal Systems at Lund University</a>
+				  {/if}    
+                             {else}
+
+			     {/if}
+
 			     {load_menu name="user" id="navigationUser" ulClass="pkp_navigation_user" liClass="profile"}
 			</nav>
 		</header><!-- .pkp_structure_head -->
