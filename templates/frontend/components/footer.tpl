@@ -19,22 +19,7 @@
 		{call_hook|assign:"sidebarCode" name="Templates::Common::Sidebar"}
 		{if $sidebarCode}
 			<div class="pkp_structure_sidebar left" role="complementary" aria-label="{translate|escape key="common.navigation.sidebar"}">
-			     {if $currentContext}
-			     	 {$sidebarCode}
-			     {else}
-				<div class="lu_logo_sidebar pkp_block">
-		     	     	     {if $currentLocale == 'sv_SE'}
-		     	  	     <a href="https://www.lu.se/">
-		     	     	     	<img alt="Lunds universitet" src="{$baseUrl}/plugins/themes/lu_site_theme/images/lu_logo-portrait-sv.png" />
-		     	  	     </a>
-			  	     {else}
-					<a href="https://www.lunduniversity.lu.se/">
-		     	     	     	   <img alt="Lund University" src="{$baseUrl}/plugins/themes/lu_site_theme/images/lu_logo-portrait-en.png" />
-		     	  	  	</a>
-			  	     {/if}
-			     	</div>
 				{$sidebarCode}
-			     {/if}
 			</div><!-- pkp_sidebar.left -->
 		{/if}
 	{/if}
