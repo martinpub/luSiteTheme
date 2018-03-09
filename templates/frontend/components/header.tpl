@@ -88,9 +88,9 @@
 			
 			     {if $currentContext}
 	  		     	  {if $currentLocale == 'sv_SE'}
-			     	      <a class="lu_ojs_link" href="https://journals.lub.lu.se/">Open Journal Systems vid Lunds universitet</a>
+			     	      <a class="lu_ojs_link" href="http://journals.lub.lu.se/">Open Journal Systems vid Lunds universitet</a>
 				  {else}
-      			     	      <a class="lu_ojs_link" href="https://journals.lub.lu.se/">Open Journal Systems at Lund University</a>
+      			     	      <a class="lu_ojs_link" href="http://journals.lub.lu.se/">Open Journal Systems at Lund University</a>
 				  {/if}    
                              {else}
 			     {/if}
