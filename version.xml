@@ -14,8 +14,8 @@
 <version>
 	<application>lu_site_theme</application>
 	<type>plugins.themes</type>
-	<release>0.9.0.0</release>
-	<date>2017-11-02</date>
+	<release>1.0.0.0</release>
+	<date>2018-03-12</date>
 	<lazy-load>0</lazy-load>
 	<class>LuSiteThemePlugin</class>
 </version>
