@@ -1,8 +1,8 @@
 {**
  * lib/pkp/templates/frontend/components/header.tpl
  *
- * Copyright (c) 2014-2017 Simon Fraser University
- * Copyright (c) 2003-2017 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief Common frontend site header.
@@ -44,7 +44,6 @@
 						<div class="pkp_site_name">
 					{/if}
 						{if $currentContext && $multipleContexts}
-
 							{url|assign:"homeUrl" page="index" router=$smarty.const.ROUTE_PAGE}
 						{else}
 							{url|assign:"homeUrl" context="index" router=$smarty.const.ROUTE_PAGE}
@@ -102,6 +101,6 @@
 		{* Wrapper for page content and sidebars *}
 		{if $isFullWidth}
 			{assign var=hasSidebar value=0}
-		{/if}	
-	<div class="pkp_structure_content{if $hasSidebar} has_sidebar{/if}">
+		{/if}
+		<div class="pkp_structure_content{if $hasSidebar} has_sidebar{/if}">
 			<div id="pkp_content_main" class="pkp_structure_main" role="main">
