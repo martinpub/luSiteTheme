@@ -30,16 +30,6 @@
 					{capture assign="url"}{url journal=$journal->getPath()}{/capture}
 					{assign var="thumb" value=$journal->getLocalizedSetting('journalThumbnail')}
 					{assign var="description" value=$journal->getLocalizedDescription()}
-					<li{if $thumb} class="has_thumb"{/if}>
-						{if $thumb}
-							{assign var="altText" value=$journal->getLocalizedSetting('journalThumbnailAltText')}
-							<div class="thumb">
-								<a href="{$url|escape}">
-									<img src="{$journalFilesPath}{$journal->getId()}/{$thumb.uploadName|escape:"url"}"{if $altText} alt="{$altText|escape}"{/if}>
-								</a>
-							</div>
-						{/if}
-
 						<div class="body">
 							<h3>
 								<a href="{$url|escape}" rel="bookmark">
