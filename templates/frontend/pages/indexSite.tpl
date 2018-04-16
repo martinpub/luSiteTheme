@@ -30,6 +30,7 @@
 					{capture assign="url"}{url journal=$journal->getPath()}{/capture}
 					{assign var="thumb" value=$journal->getLocalizedSetting('journalThumbnail')}
 					{assign var="description" value=$journal->getLocalizedDescription()}
+					<li{if $thumb} class="has_thumb"{/if}>
 						<div class="body">
 							<h3>
 								<a href="{$url|escape}" rel="bookmark">
