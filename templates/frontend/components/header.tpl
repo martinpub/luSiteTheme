@@ -84,14 +84,21 @@
 				{/if}
 			</div><!-- .pkp_head_wrapper -->
 			<nav class="pkp_navigation_user_wrapper" id="navigationUserWrapper" aria-label="{translate|escape key="common.navigation.user"}">
-			
-			     {if $currentContext}
+
+			     {* Display link to main index in journal/press context *}
+			     {if $currentJournal}
 	  		     	  {if $currentLocale == 'sv_SE'}
-			     	      <a class="lu_ojs_link" href="http://journals.lub.lu.se/">Open Journals vid Lunds universitet</a>
+			     	      <a class="lu_app_index_link" href="http://journals.lub.lu.se/">Open Journals vid Lunds universitet</a>
 				  {else}
-      			     	      <a class="lu_ojs_link" href="http://journals.lub.lu.se/">Open Journals at Lund University</a>
-				  {/if}    
-                             {else}
+      			     	      <a class="lu_app_index_link" href="http://journals.lub.lu.se/">Open Journals at Lund University</a>
+				  {/if}
+                             {elseif $currentPress}
+			     	  {if $currentLocale == 'sv_SE'}
+			     	      <a class="lu_app_index_link" href="http://books.lub.lu.se/">Open Books vid Lunds universitet</a>
+				  {else}
+      			     	      <a class="lu_app_index_link" href="http://books.lub.lu.se/">Open Books at Lund University</a>
+				  {/if}
+			     {else}
 			     {/if}
 
 			     {load_menu name="user" id="navigationUser" ulClass="pkp_navigation_user" liClass="profile"}

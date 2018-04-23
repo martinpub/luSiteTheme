@@ -1,7 +1,7 @@
-# LU Site Theme for OJS3
+# LU Site Theme for OJS3/OMP
 
-This OJS3 (child) theme brings a look and feel to OJS tailored to fit Lund University's needs.
+This OJS3/OMP (child) theme brings a look and feel to OJS and OMP tailored to fit Lund University's needs.
 
-Compatible with up to OJS 3.1.1.
+Compatible with up to OJS and OMP 3.1.1.
 
 **Work in progress.**
